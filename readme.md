@@ -101,6 +101,7 @@ Optimized for:
 
 ## 🚀 Future Improvements
 
+<pre>
 🔐 Login/Register system
 🗄️ Backend integration (Node.js + MongoDB)
 💳 Payment system
@@ -108,6 +109,7 @@ Optimized for:
 🌙 Dark mode
 🌍 Multi-language support
 📊 Admin dashboard
+</pre>
 
 ---
 
