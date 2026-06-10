@@ -68,6 +68,7 @@ Focus:
 ## 📂 Project Structure
 
 
+<pre>
 hotel-booking-website/
 │
 ├── images/
@@ -83,6 +84,7 @@ hotel-booking-website/
 │
 ├── index.html
 └── README.md
+</pre>
 
 
 ---
