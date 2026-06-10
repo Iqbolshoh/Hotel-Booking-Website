@@ -8,77 +8,85 @@
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="header">
-    <div class="logo">Hotel<span>Book</span></div>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#rooms">Rooms</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <button onclick="openModal()" class="btn">Book Now</button>
-  </header>
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">Hotel<span>Book</span></div>
 
-  <!-- HERO -->
-  <section id="home" class="hero">
-    <h1>Find Your Perfect Stay</h1>
-    <p>Book hotels easily and quickly anywhere in the world</p>
-    <button onclick="openModal()" class="btn">Start Booking</button>
-  </section>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#rooms">Rooms</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-  <!-- ROOMS -->
-  <section id="rooms" class="rooms">
-    <h2>Popular Rooms</h2>
+  <button class="btn" onclick="openModal()">Book Now</button>
+</header>
 
-    <div class="room-container">
-      <div class="room-card">
-        <img src="https://images.unsplash.com/photo-hotel1" alt="room">
-        <h3>Luxury Room</h3>
-        <p>$120 / night</p>
-      </div>
-
-      <div class="room-card">
-        <img src="https://images.unsplash.com/photo-hotel2" alt="room">
-        <h3>Deluxe Room</h3>
-        <p>$90 / night</p>
-      </div>
-
-      <div class="room-card">
-        <img src="https://images.unsplash.com/photo-hotel3" alt="room">
-        <h3>Standard Room</h3>
-        <p>$60 / night</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="about">
-    <h2>About Us</h2>
-    <p>
-      We help you find the best hotels with affordable prices and premium comfort.
-    </p>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <p>Email: info@hotelbook.com</p>
-    <p>Phone: +998 90 123 45 67</p>
-  </section>
-
-  <!-- MODAL -->
-  <div id="modal" class="modal">
-    <div class="modal-content">
-      <span onclick="closeModal()" class="close">&times;</span>
-      <h2>Book a Room</h2>
-      <input type="text" placeholder="Your Name">
-      <input type="date">
-      <input type="date">
-      <button class="btn">Confirm Booking</button>
-    </div>
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h1>Luxury Hotel Experience</h1>
+    <p>Find and book the best hotels at the best price</p>
+    <button class="btn big" onclick="openModal()">Start Booking</button>
   </div>
+</section>
 
-  <script src="script.js"></script>
+<!-- ROOMS -->
+<section id="rooms" class="section">
+  <h2>Popular Rooms</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945" />
+      <h3>Luxury Suite</h3>
+      <p>$150 / night</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85" />
+      <h3>Deluxe Room</h3>
+      <p>$110 / night</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c" />
+      <h3>Standard Room</h3>
+      <p>$70 / night</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <h2>About Us</h2>
+  <p>
+    We provide premium hotel booking experience worldwide with affordable prices and luxury comfort.
+  </p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <p>Email: info@hotelbook.com</p>
+  <p>Phone: +998 90 123 45 67</p>
+</section>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-box">
+    <span onclick="closeModal()" class="close">&times;</span>
+    <h2>Book a Room</h2>
+
+    <input type="text" placeholder="Your Name">
+    <input type="date">
+    <input type="date">
+
+    <button class="btn full">Confirm Booking</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>

@@ -2,91 +2,121 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
 }
 
 body {
-  background: #f4f6f9;
+  background: #f5f7fb;
 }
 
-/* HEADER */
-.header {
+/* NAVBAR */
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 50px;
+  padding: 18px 60px;
   background: white;
   position: sticky;
   top: 0;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  z-index: 10;
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: bold;
 }
 
 .logo span {
-  color: #ff5a5f;
+  color: #ff4d6d;
 }
 
 nav a {
   margin: 0 15px;
   text-decoration: none;
-  color: black;
+  color: #333;
 }
 
+/* BUTTON */
 .btn {
-  padding: 10px 20px;
-  background: #ff5a5f;
+  background: #ff4d6d;
   color: white;
   border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
   cursor: pointer;
-  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn.big {
+  padding: 14px 28px;
+  font-size: 16px;
+}
+
+.btn.full {
+  width: 100%;
+  margin-top: 10px;
 }
 
 /* HERO */
 .hero {
-  height: 80vh;
-  background: url("https://images.unsplash.com/photo-hotel") center/cover;
+  height: 90vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("https://images.unsplash.com/photo-1542314831-068cd1dbfeeb") center/cover;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
   text-align: center;
+  color: white;
 }
 
 .hero h1 {
-  font-size: 50px;
+  font-size: 52px;
 }
 
 .hero p {
-  margin: 10px 0;
+  margin: 15px 0;
+  font-size: 18px;
 }
 
-/* ROOMS */
-.rooms {
-  padding: 60px;
+/* SECTION */
+.section {
+  padding: 70px;
   text-align: center;
 }
 
-.room-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
   margin-top: 30px;
 }
 
-.room-card {
+/* CARD */
+.card {
   background: white;
-  padding: 15px;
-  border-radius: 10px;
-  width: 250px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s;
 }
 
-.room-card img {
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
   width: 100%;
-  border-radius: 10px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 10px 0;
 }
 
 /* ABOUT + CONTACT */
@@ -108,22 +138,22 @@ nav a {
   background: rgba(0,0,0,0.6);
 }
 
-.modal-content {
+.modal-box {
   background: white;
-  width: 300px;
+  width: 320px;
   margin: 10% auto;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
-.modal-content input {
+.modal-box input {
   width: 100%;
   padding: 10px;
-  margin: 10px 0;
+  margin: 8px 0;
 }
 
 .close {
   float: right;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 22px;
 }
