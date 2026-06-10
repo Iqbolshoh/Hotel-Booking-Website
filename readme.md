@@ -101,12 +101,13 @@ Optimized for:
 
 ## 🚀 Future Improvements
 
-* Car Booking System
-* User Authentication
-* Advanced Search & Filters
-* Online Payment Integration
-* Admin Dashboard
-* Customer Reviews & Ratings
+🔐 Login/Register system
+🗄️ Backend integration (Node.js + MongoDB)
+💳 Payment system
+🔍 Search & filter system
+🌙 Dark mode
+🌍 Multi-language support
+📊 Admin dashboard
 
 ---
 
